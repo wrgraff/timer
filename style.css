@@ -1,0 +1,73 @@
+.dial {
+  height: 400px;
+  width: 400px;
+}
+
+.timer {
+  position: relative;
+  display: inline-block;
+}
+
+* {
+  font: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.timer input::-webkit-outer-spin-button,
+.timer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.timer input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.timer button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  font-size: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.timer button:hover {
+  color: salmon;
+}
+
+.timer button .material-icons {
+  display: inline-flex;
+  align-items: center;
+  font-size: 40px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
