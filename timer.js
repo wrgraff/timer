@@ -14,16 +14,23 @@ class Timer {
     };
 
     start = () => {
+        if (this.isRunning) {
+            return;
+        };
+
         if (this.onStart) {
             this.onStart(this.timeRemaining);
         };
 
         this.tick();
         this.timerId = setInterval(this.tick, 20);
+
+        this.isRunning = true;
     };
 
     pause = () => {
         clearInterval(this.timerId);
+        this.isRunning = false;
     };
 
     tick = () => {
