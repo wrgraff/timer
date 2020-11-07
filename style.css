@@ -3,6 +3,10 @@
   width: 400px;
 }
 
+.dial circle {
+  stroke: #174AFF;
+}
+
 .timer {
   position: relative;
   display: inline-block;
